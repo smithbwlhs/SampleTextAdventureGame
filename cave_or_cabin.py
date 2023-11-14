@@ -303,11 +303,11 @@ def witch_encounter():
     print(f"""She turns to you and says "Hello, brave traveller. You have
     trespassed into my cave, but I see that you are carrying a pouch with
     1000 gold in it. I will give you 2 options so you can escape with your
-    life...""")
+    life..." """)
     time.sleep(2)
     clear_screen()
     print(f"""
-    1) Give me all of your gold and your shoes
+    "1) Give me all of your gold and your shoes
     2) Give me half of your gold and fetch me a branch."
     As you ponder this strange request, you notice she is blind. Then,
     you see a bottle of potion within your reach. What do you do? 
@@ -347,14 +347,13 @@ def treasure_shoes_scene():
     The witch takes your gold and your shoes.
     She puts some mysterious ingredients into the cauldron
     and dips your shoes in the cauldron...""")
-    time.sleep(1)
-    clear_screen()
+    time.sleep(2)
     clear_screen()
     print("""
     She takes your shoes out of the cauldron, hands them to
     you and says, "You now have shoes that will lead you to
     treasure." """)
-    time.sleep(1)
+    time.sleep(2)
     clear_screen()
     good_cave_ending(item)
 
@@ -411,7 +410,8 @@ def potion_scene():
     you now have paws. You have been turned into a weasel and you
     have lost everything.""")
         print(status(name, points))
-        time.sleep(1)
+        time.sleep(2)
+        clear_screen()
         bad_ending()
     else:
         item = "new powers"
@@ -435,13 +435,13 @@ def good_cave_ending(item):
     global name
     global points
     good_ending_art()
-    time.sleep(1)
+    time.sleep(2)
     clear_screen()
     print(f"""
         With {points} points, you, {name} the adventurous traveler,
         exit the cave with your {item} and continue down the road
         in search of more adventures""")
-    time.sleep(2)
+    time.sleep(3)
 
 
 def good_ending_art():
